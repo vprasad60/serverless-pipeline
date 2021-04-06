@@ -45,7 +45,7 @@ sam deploy --guided
 
 #### Consumer
 1. Repeat steps 1-9 above. If you do not have space when at step 6, refer to the **Potential Disk Space Issue** section above
-2. Apply an SQS trigger to the consumer Lambda function and select your specified SQS queue
+2. Apply an SQS trigger to the consumer Lambda function and select the queue you created earlier
 
 ### Running the Pipeline
 1. Enable the trigger for both the producer and consumer lambda functions
