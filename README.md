@@ -1,7 +1,7 @@
 # Project Overview
 The goal of this project is to reconstruct the serverless data pipeline in AWS described in the figure below. In summary, a producer Lambda function will read from a DyanmoDB table every minute and send the contents to a queue in SQS. A consumer Lambda function will be triggered by messages filling the queue, and will look up the contents of message on the relevant Wikipedia article. AWS Comprehend will be used to perform sentiment analysis and entity extraction, and the results will be uploaded to an S3 bucket. 
 
-**Primary reference**: [awslambda tutorial by Noah Gift](https://github.com/noahgift/awslambda)
+**Primary Reference**: [awslambda tutorial by Noah Gift](https://github.com/noahgift/awslambda)
 
 ## Serverless Pipeline Diagram 
 ![](https://camo.githubusercontent.com/bb29cd924f9eb66730bbf7b0ed069a6ae03d2f1a/68747470733a2f2f757365722d696d616765732e67697468756275736572636f6e74656e742e636f6d2f35383739322f35353335343438332d62616537616638302d353437612d313165392d393930392d6135363231323531303635622e706e67)
